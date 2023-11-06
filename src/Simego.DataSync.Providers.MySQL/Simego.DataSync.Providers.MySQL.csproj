@@ -1,22 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
-    <AssemblyTitle>MySQL Data Sync Connector</AssemblyTitle>
-    <Product>MySQL Data Sync Connector</Product>
-    <Copyright>Copyright Simego Ltd © 2022</Copyright>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Simego.DataSync.Core">
-      <HintPath>..\..\3rdParty\Simego.DataSync.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Simego.DataSync.Providers.Ado">
-      <HintPath>..\..\3rdParty\Simego.DataSync.Providers.Ado.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MySql.Data" Version="8.0.30" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<AssemblyTitle>MySQL Data Sync Connector</AssemblyTitle>
+		<Product>MySQL Data Sync Connector</Product>
+		<Copyright>Copyright Simego Ltd © 2022</Copyright>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<UseWindowsForms>true</UseWindowsForms>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="Simego.DataSync.Core">
+			<HintPath>..\..\3rdParty\Simego.DataSync.Core.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+		</Reference>
+		<Reference Include="Simego.DataSync.Providers.Ado">
+			<HintPath>..\..\3rdParty\Simego.DataSync.Providers.Ado.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MySql.Data" Version="8.2.0" />
+	</ItemGroup>
 </Project>
