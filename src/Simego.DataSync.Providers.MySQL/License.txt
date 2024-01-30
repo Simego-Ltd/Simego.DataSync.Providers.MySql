@@ -1,1 +1,3 @@
-﻿Please refer to Oracle GPLv2 License https://downloads.mysql.com/docs/licenses/connector-net-8.0-gpl-en.pdf
+﻿Please refer to MySQL Driver License https://licenses.nuget.org/GPL-2.0-only
+
+https://www.nuget.org/packages/MySql.Data/8.3.0

@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Simego.DataSync.Providers.MySQL
 {
-    [ProviderInfo(Name = "MySQL (8.0.30)", Group = "SQL", Description = "MySql.Data.MySqlClient by Oracle")]
+    [ProviderInfo(Name = "MySQL (8.3.0)", Group = "SQL", Description = "MySql.Data.MySqlClient by Oracle")]
     public class MySqlDatasourceReader : AdoDataSourceReader
     {
         private Lazy<AdoDbProviderFactory> MyFactory => new Lazy<AdoDbProviderFactory>(() => new AdoDbProviderFactory("MySql.Data", GetFactory()));
